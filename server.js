@@ -16,7 +16,8 @@ app.use(express.urlencoded({
 app.use('/api/v1',apiShortner);
 app.post('/:shorted',sortedUrlFetch)
 app.get("/admin",listData)
-// app.post('/delete/data',deleteData) // has bug on it need to fix
+app.post('/delete/data',deleteData) // has bug on it need to fixdeerhold
+
 
 
 app.listen(process.env.PORT,()=>{
